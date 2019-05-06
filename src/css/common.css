@@ -1,0 +1,274 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+  background-color: #f0f0f1;
+  color: #333;
+}
+.layui-tab {
+  margin: 0;
+}
+.layui-tab .layui-tab-title {
+  height: auto;
+}
+.layui-tab .layui-tab-title .layui-this:after {
+  content: none;
+}
+.layui-tab .layui-tab-content {
+  padding: 0;
+}
+.head-bx {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.head-bx .head-con {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #009ffb;
+  border-radius: 4px;
+}
+.head-bx .head-tag {
+  flex: 1;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #009ffb;
+}
+.head-bx .layui-this {
+  color: #fff;
+  background-color: #009ffb;
+}
+.js-sh-list .lesson-item {
+  margin-bottom: 5px;
+  padding: 10px 4%;
+  overflow: hidden;
+  background-color: #fff;
+}
+.js-sh-list .lesson-item a,
+.js-sh-list .lesson-item .lesson-link {
+  display: flex;
+}
+.js-sh-list .lesson-item a img,
+.js-sh-list .lesson-item .lesson-link img {
+  width: 32%;
+  height: 128px;
+  margin-right: 10px;
+}
+.js-sh-list .lesson-item a p > img,
+.js-sh-list .lesson-item .lesson-link p > img {
+  width: auto;
+  height: 58px;
+  /* margin-right: 10px; */
+  margin: 0 auto;
+  display: block;
+}
+.js-sh-list .lesson-item a a,
+.js-sh-list .lesson-item .lesson-link a {
+  display: inline-block;
+}
+.js-sh-list .lesson-item a .right,
+.js-sh-list .lesson-item .lesson-link .right {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 1.2em;
+}
+.js-sh-list .lesson-item a .right .three-ellipsis,
+.js-sh-list .lesson-item .lesson-link .right .three-ellipsis {
+  height: 58px;
+  font-size: 14px;
+}
+.js-sh-list .lesson-item a dd,
+.js-sh-list .lesson-item .lesson-link dd {
+  color: #666;
+}
+.js-sh-list .lesson-item a dd p,
+.js-sh-list .lesson-item .lesson-link dd p {
+  display: inline-block;
+  overflow: hidden;
+}
+.js-sh-list .lesson-item a .sf-bx,
+.js-sh-list .lesson-item .lesson-link .sf-bx {
+  color: #fda02d;
+}
+.js-sh-list .lesson-item a .max-num,
+.js-sh-list .lesson-item .lesson-link .max-num {
+  font-size: 12px;
+  color: #7bcfff;
+}
+.js-sh-list .lesson-item a .max-num .start-les,
+.js-sh-list .lesson-item .lesson-link .max-num .start-les {
+  display: inline-block;
+  margin-left: 13%;
+  padding: 0 6px;
+  line-height: 2em;
+  color: #fff;
+  background-color: #fda02d;
+}
+.my-com-lessondet .img-bx {
+  position: relative;
+}
+.my-com-lessondet .img-bx img {
+  width: 100vw;
+  height: 190px;
+  object-fit: cover;
+}
+.my-com-lessondet .img-bx .img-tag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 32px;
+  padding: 0 8px;
+  line-height: 32px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #7bcfff;
+}
+.my-com-lessondet .img-bx .hadfull {
+  background-color: #fda02d;
+}
+.my-com-lessondet .img-bx .hadover {
+  background-color: #ff5500;
+}
+.my-com-lessondet .lesson-det {
+  background-color: #fff;
+}
+.my-com-lessondet .lesson-det dt {
+  padding: 14px 14px 0;
+  line-height: 1.2em;
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+.my-com-lessondet .lesson-det .detail-one {
+  padding: 0 14px;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #808080;
+}
+.my-com-lessondet .lesson-det .feiyong-new {
+  padding: 10px 14px;
+  font-size: 20px;
+  color: #fda02d;
+}
+.my-com-lessondet .lesson-det .feiyong-new:after,
+.my-com-lessondet .lesson-det .detail-two:after {
+  border-color: #ddd;
+}
+.my-com-lessondet .lesson-det .detail-two {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px 14px;
+}
+.my-com-lessondet .lesson-det .detail-two .det-item {
+  width: 33.33%;
+}
+.my-com-lessondet .lesson-det .detail-two i {
+  font-size: 24px;
+  color: #808080;
+}
+.my-com-lessondet .lesson-det .detail-two .det-two-tt {
+  width: 100%;
+  font-size: 12px;
+  color: #808080;
+}
+.my-com-lessondet .lesson-det .detail-two .det-two-mid {
+  line-height: 1.4;
+  font-size: 14px;
+  color: #333;
+}
+.my-com-lessondet .lesson-det .the-teacher::before,
+.my-com-lessondet .lesson-det dd::before {
+  border-color: #ddd;
+}
+.my-com-lessondet .lesson-det .the-teacher {
+  padding: 14px ;
+}
+.my-com-lessondet .lesson-det .the-teacher .teacher-bx {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 0;
+}
+.my-com-lessondet .lesson-det .the-teacher img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 14px;
+  border-radius: 100%;
+}
+.my-com-lessondet .lesson-det dd {
+  padding: 14px;
+  font-size: 15px;
+  line-height: 1.2em;
+  color: #666;
+}
+.my-com-lessondet .lesson-det p {
+  display: inline-block;
+}
+.my-com-lessondet .lesson-det p img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+.my-com-lessondet .num-bx {
+  padding: 14px 10px;
+  margin-bottom: 4px;
+  background-color: #fff;
+}
+.my-com-lessondet .num-bx span {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #7bcfff;
+}
+.my-com-lessondet .num-bx span:first-child {
+  border-right: 1px solid #ddd;
+}
+.my-com-lessondet .num-bx .money-num {
+  color: #fda02d;
+}
+.my-com-lessondet .num-bx::before {
+  border-color: #ddd;
+}
+.my-com-lessondet .ks-list {
+  background-color: #fff;
+}
+.my-com-lessondet .ks-list .ks-title {
+  margin: 0 10px;
+  line-height: 4em;
+}
+.my-com-lessondet .ks-list .ks-title::after {
+  border-color: #ddd;
+}
+.my-com-lessondet .ks-list ul li {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.2em;
+}
+.my-com-lessondet .ks-list ul li span:first-child {
+  flex: 1;
+}
+.my-com-lessondet .ks-list ul .ks-item-right {
+  display: inline-block;
+  padding: 0 10px;
+  height: 30px;
+  border-radius: 4px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #7bcfff;
+  color: #fff;
+}
+.my-com-lessondet .ks-list ul .lsdone .ks-item-right {
+  background-color: #a5a5a5;
+}

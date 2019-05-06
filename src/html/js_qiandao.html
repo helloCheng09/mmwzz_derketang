@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>本地-第二课堂教师签到</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../js/JsDepend/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/index.css?t=<?php echo time();?>">
+    <link rel="stylesheet" href="../css/common.css?t=<?php echo time();?>">
+    <!-- js -->
+    <script type='text/javascript' src="../js/JsDepend/jQuery.min.js"></script>
+    <script type='text/javascript' src="../js/wall-e.js?t=<?php echo time();?>"></script>
+</head>
+
+<body>
+
+    <div id="qiandaowrap">
+        <div class="layui-tab" lay-filter="tab1">
+            <div class="head-bx">
+                <ul class="layui-tab-title head-con">
+                    <li class="layui-this head-tag left">上课签到</li>
+                    <li class="head-tag right ">下课签到</li>
+                </ul>
+            </div>
+
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+                    <div class="control-bx">
+                        <div class="tt">
+                            学生列表
+                        </div>
+                        <div class="control-right">
+                            <span class="fanxuan">反选</span>
+                            <span class="quanxuan">全选</span>
+                        </div>
+                    </div>
+                    <div class="layui-form skform">
+                        <div class="layui-form-item">
+                            <div class="layui-input-block checkbox-pn" id="qdform">
+                                <input type="checkbox" lay-filter="qdcheckbox" value="1" name="students[]"
+                                    filter="qdcheckbox" lay-skin="primary" title="周杰伦">
+                                <input type="checkbox" lay-filter="qdcheckbox" value="2" name="students[]"
+                                    lay-skin="primary" title="黎明1" checked>
+                                <input type="checkbox" lay-filter="qdcheckbox" value="3" name="students[]"
+                                    lay-skin="primary" title="黎明2" checked>
+                                <input type="checkbox" lay-filter="qdcheckbox" value="4" name="students[]"
+                                    lay-skin="primary" title="黎明3" checked>
+                                <input type="checkbox" lay-filter="qdcheckbox" value="5" name="students[]"
+                                    lay-skin="primary" title="黎明5" checked>
+                                <input type="checkbox" lay-filter="qdcheckbox" value="6" name="students[]"
+                                    lay-skin="primary" title="黎明4" checked>
+                                <input type="checkbox" lay-filter="qdcheckbox" value="7" name="students[]"
+                                    lay-skin="primary" title="黎明6" checked>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-form-label">
+                                输入课时
+                            </div>
+                            <div class="layui-form-block">
+                                <input type="number" placeholder="输入签到的课时数" lay-verify="keshiNum" class="layui-input num_lesson"
+                                    autocomplete="off" name="num_lesson">
+                                <img src="../img/closebtn.png" class="closebtn-input">
+                            </div>
+
+                        </div>
+                        <div class="layui-form-item btn-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit lay-filter="shangkeSub">发送上课签到消息</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-tab-item ">
+                    <div class="control-bx">
+                        <div class="tt">
+                            学生列表
+                        </div>
+                        <div class="control-right">
+                            <span class="fanxuan">反选</span>
+                            <span class="quanxuan">全选</span>
+                        </div>
+                    </div>
+                    <div class="layui-form skform">
+                        <div class="layui-form-item">
+                            <div class="layui-input-block checkbox-pn" id="qdform">
+                                <input type="checkbox" lay-filter="qdcheckbox" value="1" name="students[]"
+                                    filter="qdcheckbox" lay-skin="primary" title="周杰伦">
+                                <input type="checkbox" lay-filter="qdcheckbox" value="2" name="students[]"
+                                    lay-skin="primary" title="黎明1" checked>
+                                <input type="checkbox" lay-filter="qdcheckbox" value="3" name="students[]"
+                                    lay-skin="primary" title="黎明2" checked>
+                                <input type="checkbox" lay-filter="qdcheckbox" value="4" name="students[]"
+                                    lay-skin="primary" title="黎明3" checked>
+                                <input type="checkbox" lay-filter="qdcheckbox" value="5" name="students[]"
+                                    lay-skin="primary" title="黎明5" checked>
+                                <input type="checkbox" lay-filter="qdcheckbox" value="6" name="students[]"
+                                    lay-skin="primary" title="黎明4" checked>
+                                <input type="checkbox" lay-filter="qdcheckbox" value="7" name="students[]"
+                                    lay-skin="primary" title="黎明6" checked>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-form-label">
+                                输入课时
+                            </div>
+                            <div class="layui-form-block">
+                                <input type="number" placeholder="输入签到的课时数" lay-verify="xiakeNum" class="layui-input xiakeNum"
+                                    autocomplete="off" name="num_lesson">
+                            </div>
+                            <img src="../img/closebtn.png" class="closebtn-input">
+                        </div>
+                        <div class="layui-form-item btn-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit lay-filter="xiakeSub">发送下课签到消息</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+<!-- js -->
+<script type='text/javascript' src="../js/JsDepend/layui/layui.all.js"></script>
+<script type='text/javascript' src="../js/index.js?t=<?php echo time();?>"></script>

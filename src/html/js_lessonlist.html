@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>本地-教师第二课堂课程列表</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../js/JsDepend/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/index.css?t=<?php echo time();?>">
+    <link rel="stylesheet" href="../css/common.css?t=<?php echo time();?>">
+    <!-- js -->
+    <script type="text/javascript" src="../js/JsDepend/jQuery.min.js"></script>
+    <!-- 插件核心 -->
+    <!-- <script src="../js/JsDepend/webuploader.min.js"></script> -->
+    <script src="../js/JsDepend/Eleditor.min.js"></script>
+    <script type="text/javascript" src="../js/wall-e.js?t=<?php echo time();?>"></script>
+</head>
+
+<body>
+
+    <div id="jsClassList">
+        <div class="layui-tab " lay-filter="tab1">
+            <div class="head-bx">
+                <ul class="layui-tab-title head-con">
+                    <li class="layui-this head-tag left">我的课程</li>
+                    <li class="head-tag right ">开设课程</li>
+                </ul>
+            </div>
+
+            <div class="layui-tab-content">
+                <div class="layui-tab-item tab-two layui-show">
+                    <div class="layui-tab " lay-filter="tab2">
+                        <ul class="layui-tab-title">
+                            <li>待审核</li>
+                            <li class="layui-this">已通过</li>
+                            <li>未通过</li>
+                        </ul>
+                    </div>
+                    <div class="layui-tab-content two-main-screen">
+                        <div class="layui-tab-item">
+                            <ul class="flow-default js-sh-list" id="daishenhe">
+                                <!-- <li class="lesson-item">
+                                    <a href="./js_classdet.html?id=111">
+                                        <img src="../img/classroom_default_cover_vertical.png">
+                                        <div class="right">
+                                            <dt class="one-ellipsis">课程标题xxxxxxxxxxxxxxxxxxx课程标题xxxxxxxxxxxxxxxxxxx</dt>
+                                            <dd class="three-ellipsis">
+                                                它从标准的语音入门开始，通过单词、语法的精讲、口语会话的拓展它从标准的语音入门开始，通过单词、语法的精讲、口语会话的拓展它从标准的语音入门开始，通过单词、语法的精讲、口语会话的拓展它从标准的语音入门开始，通过单词、语法的精讲、口语会话的拓展它从标准的语音入门开始，通过单词、语法的精讲、口语会话的拓展它从标准的语音入门开始，通过单词、语法的精讲、口语会话的拓展
+                                            </dd>
+                                            <div class="sf-bx">
+                                                收费：￥188.00
+                                            </div>
+                                            <div class="max-num">
+                                                #人数上限：20人
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="layui-tab-item layui-show">
+                            <ul class="flow-default js-sh-list" id="shenheguo">
+                                <li class="lesson-item" data-id="788">
+                                    <a href="javascript:void(0);" class="lesson-link">
+                                        <!-- <img src="../img/classroom_default_cover_vertical.png"> -->
+                                        <div class="right">
+                                            <div class="link-href" data-href="./js_classdet.html?id=111">
+                                                <dt class="two-ellipsis">课程标题xxxxxxxxxxxxxxxxxxx课程标题xxxxxxxxxxxxxxxxxxx
+                                                </dt>
+                                                <dd class="three-ellipsis">
+                                                    课程描述 课程描述 课程描述 课程描述 课程描述 课程描述 课程描述 课程描述 课程描述 课程描述 课程描述 课程描述 课程描述
+                                                    课程描述 课程描述 课程描述 课程描述 课程描述 课程描述 课程描述 课程描述 课程描述 课程描述 课程描述 课程描述
+                                                </dd>
+                                            </div>
+                                            <div class="sf-bx">
+                                                收费：￥188.00
+                                            </div>
+                                            <div class="max-num">
+                                                #人数上限：20人 #购买人数：2人
+                                                <span class="start-les">开始上课</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="layui-tab-item">
+                            <ul class="flow-default js-sh-list" id="weitongguo">
+                                3333
+                                <!-- <li class="lesson-item">
+                                    <a href="./js_classdet.html?id=111">
+                                        <img src="../img/classroom_default_cover_vertical.png">
+                                        <div class="right">
+                                            <dt class="one-ellipsis">课程标题xxxxxxxxxxxxxxxxxxx课程标题xxxxxxxxxxxxxxxxxxx</dt>
+                                            <dd class="three-ellipsis">
+                                                它从标准的语音入门开始，通过单词、语法的精讲、口语会话的拓展它从标准的语音入门开始，通过单词、语法的精讲、口语会话的拓展它从标准的语音入门开始，通过单词、语法的精讲、口语会话的拓展它从标准的语音入门开始，通过单词、语法的精讲、口语会话的拓展它从标准的语音入门开始，通过单词、语法的精讲、口语会话的拓展它从标准的语音入门开始，通过单词、语法的精讲、口语会话的拓展
+                                            </dd>
+                                            <div class="sf-bx">
+                                                收费：￥188.00
+                                            </div>
+                                            <div class="max-num">
+                                                #人数上限：20人
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="layui-tab-item  ">
+                    <div class="layui-form sub-new-lesson">
+                        <div class="layui-form-item">
+                            <div class="layui-form-label">课程名称</div>
+                            <div class="layui-form-block">
+                                <input type="text" name="title" lay-verify="title" placeholder="输入课程名称"
+                                    autocomplete="off" class="layui-input ">
+                                <img src="../img/closebtn.png" class="closebtn-input">
+                            </div>
+                        </div>
+                        <!-- 新增 -->
+                        <div class="zsdx-bx layui-form-item">
+                            <div class="layui-form-label">招生对象</div>
+                            <div class="layui-form-block">
+                                <input type="text" autocomplete="off" name="target" lay-verify="target"
+                                    placeholder="请输入招生对象" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="zsdx-bx layui-form-item">
+                            <div class="layui-form-label">开课时间</div>
+                            <div class="layui-form-block kk-date">
+                                <input type="text" name="startdate" class="layui-input" id="date" placeholder="请选择开课日期" lay-verify="startdate" bind-hasFocus="true" readonly="true">
+                            </div>
+                        </div>
+                        <div class="zsdx-bx layui-form-item">
+                            <div class="layui-form-label">上课时间</div>
+                            <div class="layui-form-block sk-time">
+                                <input type="text" name="datetime1" class="layui-input" id="datetime1" placeholder="上课时间"  bind-hasFocus="true" readonly="true" lay-verify="datetime1">
+                            </div>
+                            - <div class="layui-form-block sk-time">
+                                    <input type="text" name="datetime2" class="layui-input" id="datetime2" placeholder="下课时间" lay-verify="datetime2">
+                                </div>
+                        </div>
+                        <div class="layui-form-item jieshao">
+                            <div class="layui-form-label">课程介绍</div>
+                            <div class="layui-form-block fuwenben-bx">
+                                <div id="contentEditor" style=""></div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-label">总课时</div>
+                            <div class="layui-form-block">
+                                <input type="number" name="time" lay-verify="time" placeholder="请输入总课时数"
+                                    autocomplete="off" class="layui-input">
+                                <img src="../img/closebtn.png" class="closebtn-input">
+                            </div>
+
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-label">人数上限</div>
+                            <div class="layui-form-block">
+                                <input type="number" name="max_limit" lay-verify="max_limit" placeholder="请输入课学生人数上限"
+                                    autocomplete="off" class="layui-input">
+                                <img src="../img/closebtn.png" class="closebtn-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-label">课程收费</div>
+                            <div class="layui-form-block">
+                                <input type="number" name="fee" lay-verify="fee" placeholder="请输入课程收费"
+                                    autocomplete="off" class="layui-input">
+                                <img src="../img/closebtn.png" class="closebtn-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item upload-img">
+                            <div class="layui-label">课程封面</div>
+                            <input type="text" name="cover" value="" hidden>
+                        </div>
+                        <!-- <div class="outer-bx upload-img-bx" id="uploadcover">
+                            <i class="layui-icon layui-icon-picture"></i>
+                        </div> -->
+                        <div class="img-show-bx" >
+                            <img src="https://rin.linovel.net/cover/20190409/100008_0_44547c21fb97eca247475bee9fb199c2.jpg!min300jpg">
+                            <span class="reload">重新上传</span>
+                        </div>
+
+                        <div class="layui-form-item subbtn">
+                            <div class="layui-form-block">
+                                <button class="layui-btn jskkBtn" lay-submit lay-filter="subLesson">申请开课</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<!-- js -->
+<script type="text/javascript"  src="../js/JsDepend/layui/layui.all.js"></script>
+<script type="text/javascript"  src="../js/index.js?t=<?php echo time();?>"></script>
+
+<!-- <script type="text/javascript" src="<?php echo PUBLICPATH; ?>yz/js/ueditor/ueditor.config.js?t=<?php echo time();?>">
+</script>
+<script type="text/javascript" src="<?php echo PUBLICPATH; ?>yz/js/ueditor/ueditor.all.js?t=<?php echo time();?>">
+</script> -->
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    // function IsPC() {
+    //     var userAgentInfo = navigator.userAgent;
+    //     var Agents = ["Android", "iPhone",
+    //         "SymbianOS", "Windows Phone",
+    //         "iPad", "iPod"
+    //     ];
+    //     var flag = true;
+    //     for (var v = 0; v < Agents.length; v++) {
+    //         if (userAgentInfo.indexOf(Agents[v]) > 0) {
+    //             flag = false;
+    //             break;
+    //         }
+    //     }
+    //     return flag;
+    // }
+    // if (IsPC()) {
+    //     var editor = UE.getEditor('container');
+    // }
+    // layui.use('laydate', function () {
+    //     var laydate = layui.laydate;
+    //     //执行一个laydate实例
+    //     laydate.render({
+    //         elem: '#date', //指定元素
+    //         type: 'date'
+    //     });
+    //     laydate.render({
+    //         elem: '#datetime1', //指定元素
+    //         type: 'time'
+    //     });
+    //     laydate.render({
+    //         elem: '#datetime2', //指定元素
+    //         type: 'time'
+    //     });
+    // });
+</script>

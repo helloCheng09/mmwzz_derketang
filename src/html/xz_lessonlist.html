@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>本地-校長課程列表</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../js/JsDepend/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/common.css?t=<?php echo time();?>">
+    <link rel="stylesheet" href="../css/index.css?t=<?php echo time();?>">
+    <!-- js -->
+    <script type='text/javascript' src="../js/JsDepend/jQuery.min.js"></script>
+    <script type='text/javascript' src="../js/wall-e.js?t=<?php echo time();?>"></script>
+</head>
+
+<body>
+
+    <div  class="my-com-lessondet" id="xzLessonList">
+        <div class="layui-tab " lay-filter="tab1">
+            <div class="head-bx">
+                <ul class="layui-tab-title head-con">
+                    <li class="layui-this head-tag left">待审课程</li>
+                    <li class="head-tag right ">审核记录</li>
+                </ul>
+            </div>
+
+            <div class="layui-tab-content">
+                <div class="layui-tab-item tab-two layui-show">
+                    <div class="search-bx">
+                        <div class="search-item">
+                            <i class="layui-icon layui-icon-search"></i>
+                            <input type="text" name="done_keywords" placeholder="搜索课程标题/教师姓名" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <ul class="flow-default js-sh-list" id="xzdsList">
+                        <li class="lesson-item">
+                            <a href="./xz_lessondet.html">
+                                <img src="../img/classroom_default_cover_vertical.png">
+                                <div class="right">
+                                    <dt class="one-ellipsis">课程标题xxxxxxxxxxxxxxxxxxx课程标题xxxxxxxxxxxxxxxxxxx</dt>
+                                    <dd class="three-ellipsis">
+                                        32222222222222222222222222222222222222222222224
+                                    </dd>
+                                    <div class="xz-ds">
+                                        <div>
+                                            <div class="sf-bx">
+                                                收费：￥188.00
+                                            </div>
+                                            <div class="max-num">
+                                                #人数上限：20人
+                                            </div>
+                                        </div>
+                                        <div class="waiting-les">
+                                            <i class="layui-icon layui-icon-log"></i>
+                                            <span>待审核</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="layui-tab-item  ">
+                    <div class="search-bx">
+                        <div class="search-item">
+                            <i class="layui-icon layui-icon-search"></i>
+                            <input type="text" name="keywords" placeholder="搜索课程标题/教师姓名" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <!-- 2种情况 校长通过 pss图片 校长拒绝 refuse图片  -->
+                    <ul class="flow-default js-sh-list" id="xzshDone">
+                        <li class="lesson-item">
+                            <a href="./js_classdet.html?id=111">
+                                <img src="../img/classroom_default_cover_vertical.png">
+                                <div class="right">
+                                    <dt class="one-ellipsis">课程标题xxxxxxxxxxxxxxxxxxx课程标题xxxxxxxxxxxxxxxxxxx</dt>
+                                    <dd class="three-ellipsis">
+                                        很饿呵呵呵呵呵呵呵呵说两句楼上的
+                                    </dd>
+                                    <div class="xz-ds">
+                                        <div>
+                                            <div class="sf-bx">
+                                                收费：￥188.00
+                                            </div>
+                                            <div class="max-num">
+                                                #人数上限：20人
+                                            </div>
+                                        </div>
+                                        <div class="waiting-les">
+                                            <img src="../img/classroom_headmaster_img_pass@2x.png" class="sh-done">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="lesson-item">
+                            <a href="./js_classdet.html?id=111">
+                                <img src="../img/classroom_default_cover_vertical.png">
+                                <div class="right">
+                                    <dt class="one-ellipsis">课程标题xxxxxxxxxxxxxxxxxxx课程标题xxxxxxxxxxxxxxxxxxx</dt>
+                                    <dd class="three-ellipsis">
+                                        很饿呵呵呵呵呵呵呵呵说两句楼上的
+                                    </dd>
+                                    <div class="xz-ds">
+                                        <div>
+                                            <div class="sf-bx">
+                                                收费：￥188.00
+                                            </div>
+                                            <div class="max-num">
+                                                #人数上限：20人
+                                            </div>
+                                        </div>
+                                        <div class="waiting-les">
+                                            <img src="../img/classroom_headmaster_img_refuse@2x.png" class="sh-done">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<!-- js -->
+<script type='text/javascript' src="../js/JsDepend/layui/layui.all.js"></script>
+<script type='text/javascript' src="../js/index.js?t=<?php echo time();?>"></script>

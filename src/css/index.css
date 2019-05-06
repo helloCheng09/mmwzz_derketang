@@ -1,0 +1,354 @@
+@import 'StyleDepend/mReset.css';
+#jsClassList .layui-tab-item .upload-img {
+  background-color: transparent!important;
+}
+#jsClassList .upload-img-bx {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  border: dashed 1px #7bcfff;
+}
+#jsClassList .upload-img-bx i {
+  font-size: 40px;
+  color: #7bcfff;
+}
+#jsClassList .img-show-bx {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+#jsClassList .img-show-bx > span {
+  padding: 0 10px;
+  margin: 0 10px;
+  line-height: 1.6;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+#jsClassList .img-show-bx img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+#jsClassList .little-ts {
+  color: #f50;
+  font-size: 12px;
+}
+#jsClassList .fuwenben-bx .Eleditor-placeholder,
+#jsClassList .fuwenben-bx p {
+  display: inline-block;
+  width: 100%;
+  padding: 2%!important;
+}
+#jsClassList .fuwenben-bx img {
+  display: block;
+  width: 85%;
+  height: 200px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+#jsClassList .fuwenben-bx .closebtn-input,
+#jsClassList .fuwenben-bx .closebtn-textarea {
+  position: absolute;
+  z-index: 999;
+  right: 14px;
+  top: 50%;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+#jsClassList .fuwenben-bx #container {
+  margin-top: 10px;
+}
+#jsClassList .Eleditor-controller {
+  z-index: 99999;
+}
+#jsClassList .layui-tab-item .layui-form-item {
+  position: relative;
+}
+#jsClassList .layui-tab-item .layui-form-block {
+  flex: 1;
+}
+#jsClassList .layui-tab-item .closebtn-textarea {
+  top: 88%;
+}
+#jsClassList .layui-tab-item .layui-form-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+#jsClassList .layui-tab-item .layui-form-label,
+#jsClassList .layui-tab-item .layui-label {
+  min-width: 30%;
+  padding: 0;
+  text-align: left;
+  height: 44px;
+  line-height: 44px;
+}
+#jsClassList .layui-tab-item .sub-new-lesson {
+  margin-top: 1px;
+}
+#jsClassList .layui-tab-item .sub-new-lesson .subbtn {
+  margin: 20px 0;
+  background-color: transparent;
+}
+#jsClassList .layui-tab-item .sub-new-lesson .subbtn .form-block {
+  width: 100%;
+}
+#jsClassList .layui-tab-item .jieshao {
+  display: inline-block;
+  padding-bottom: 10px;
+  width: 100%;
+}
+#jsClassList .layui-tab-item .jieshao .layui-form-label {
+  width: 100%;
+  display: block;
+}
+#jsClassList .tab-two .layui-tab-title {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+#jsClassList .tab-two .layui-tab-title li {
+  line-height: 2em;
+  padding: 0 15px;
+  border-radius: 20px;
+  transition: none;
+  color: #fff;
+  background-color: #7bcfff;
+}
+#jsClassList .tab-two .layui-tab-title .layui-this {
+  color: #fff;
+  background-color: #009ffb;
+}
+#jsClassList .tab-two .two-main-screen {
+  padding-bottom: 10px;
+  min-height: calc(100vh - 98px);
+}
+#jsClassList .tab-two .two-main-screen #LAY_lesson .layui-flow-more {
+  margin-bottom: 0;
+}
+#jsClassList .tab-two .two-main-screen #LAY_lesson .layui-flow-more a cite {
+  display: none;
+  color: #009ffb;
+  background-color: #fff;
+}
+#qiandaowrap .layui-tab-item .control-bx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  height: 44px;
+  color: #009ffb;
+}
+#qiandaowrap .layui-tab-item .control-bx .control-right span {
+  margin: 0 15px;
+  font-weight: bold;
+}
+#qiandaowrap .layui-tab-item .layui-form {
+  background-color: #fff;
+}
+#qiandaowrap .layui-tab-item .layui-form .checkbox-pn {
+  display: flex;
+  flex-wrap: wrap;
+}
+#qiandaowrap .layui-tab-item .layui-form .checkbox-pn .layui-form-checkbox {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex: 1;
+}
+#qiandaowrap .layui-tab-item .layui-form .checkbox-pn .layui-form-checkbox span {
+  font-size: 16px;
+}
+#qiandaowrap .layui-tab-item .layui-form-checked[lay-skin=primary] i {
+  background-color: #009ffb;
+  border-color: #009ffb;
+}
+#qiandaowrap .layui-tab-item .layui-form-checkbox[lay-skin=primary]:hover i {
+  border-color: #009ffb;
+}
+#qiandaowrap .layui-tab-item .layui-form-item {
+  position: relative;
+}
+#qiandaowrap .layui-tab-item .layui-form-label {
+  height: 44px;
+  width: 100%;
+  padding: 0 15px;
+  line-height: 44px;
+  background-color: #f0f0f1;
+  color: #009ffb;
+}
+#qiandaowrap .layui-tab-item .closebtn-input {
+  bottom: 10px;
+  top: auto;
+  margin: 0;
+}
+#qiandaowrap .layui-tab-item .btn-item {
+  padding: 0 10px;
+  background-color: #f0f0f1;
+}
+#qiandaowrap .layui-tab-item .layui-btn {
+  margin-top: 60px;
+}
+#jzlessonlist .sf-bx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#jzlessonlist .two-ellipsis {
+  height: 39px;
+}
+#jzlessonlist .zhifu {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #fda02d;
+  color: #fff;
+}
+#jzlessonlist .max-num {
+  position: relative;
+}
+#jzlessonlist .check-num {
+  display: flex;
+  justify-content: space-between;
+}
+#jzlessonlist .layui-progress-bar {
+  background-color: #fda02d;
+}
+#jzlessonlist .layui-progress {
+  display: inline-block;
+  width: 100%;
+  background-color: #fecf96;
+}
+#jzLessonDet {
+  min-height: 100vh;
+}
+#jzLessonDet .jz-buy-btn {
+  width: 94%;
+  margin: 40px 3% 40px;
+  border: none;
+  background-color: #fda02d;
+}
+#jzqddet {
+  min-height: 100vh;
+}
+#jzqddet .ks-item-left {
+  flex: none;
+  width: 100%;
+}
+#jzqddet .student-qd {
+  flex-wrap: wrap;
+}
+#jzqddet .qd-det {
+  padding-left: 40px;
+  width: 100%;
+}
+#jzqddet .qd-det .qd-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999;
+}
+#jzqddet .qd-det .done {
+  color: #009ffb;
+}
+#xzLessonList .xz-ds {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#xzLessonList .waiting-les {
+  color: #7bcfff;
+}
+#xzLessonList .sh-done {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+#xzLessonList .search-bx {
+  display: flex;
+  padding: 0 15px;
+  justify-content: center;
+  background-color: #fff;
+}
+#xzLessonList .search-bx .search-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+  border-radius: 10px;
+  background-color: #f0f0f1;
+}
+#xzLessonList .search-bx i {
+  padding-top: 4px;
+  font-size: 20px;
+  color: #808080;
+}
+#xzLessonList .search-bx input {
+  line-height: 18px;
+  padding: 4px 10px 4px 4px;
+  background-color: #f0f0f1;
+}
+#xzlsDet {
+  min-height: 100vh;
+}
+#xzlsDet .xzsh-btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+#xzlsDet .xzsh-btns .danger {
+  background-color: #f50;
+}
+#xzlsDet .xzshbtn {
+  width: 100px;
+}
+#jsQdList .qd-gl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#jsQdList .qd-gl > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6px 0;
+  height: 56px;
+}
+#jsQdList .qd-gl .right-btn-link {
+  width: 80px;
+  height: 24px!important;
+  padding: 0 4px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 14px;
+}
+#jsQdList .qd-gl .r-btns {
+  width: 84px;
+}
+#jsQdList .qd-gl .r-btns .layui-btn {
+  margin: 4px 0 0 0;
+}
+#jsQdList .qd-gl .r-btns a {
+  display: inline-block;
+  line-height: 24px;
+  height: 24px;
+  text-align: center;
+  color: #fff;
+}
+#jsQdList .qd-gl .r-btns .layui-btn:last-child {
+  background-color: #fda02d;
+}
