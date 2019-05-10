@@ -11,7 +11,7 @@
         xzSh: '/mobile2/dier_lesson/school_sh', // 校长审核新课程接口
         qiandaoUrl: '/api/exec_dier/sendqiandaoMsg', // 教师上课签到 1上课 2下课
         xzShSearch: '/mobile2/dier_lesson/schoollist_cx', // 搜索校长审核列表 keywords
-        jzFenye: '/mobile2/dier_lesson/pa_list', // 家长选课列表
+        jzFenye: '/mobile2/dier_lesson/ajaxStudentLesson', // 家长选课列表
         startLesUrl: '/mobile2/dier_lesson/endlist', // 教师结束课程发布，正式开始上课
         deleLesUrl: '/mobile2/dier_lesson/del', // 教师删除课程
     };
@@ -25,13 +25,16 @@
      * index.js
      */
     if (document.getElementById('jsClassList')) {
+        // 获取url参数type
+        var url_type = (root.getQueryString('type'))
+        console.log(url_type);
         // 上传图片到微信接口
         // 展示本地图片地址
         // 传微信服务器id给后台
         function uploadCover() {
 
             wx.chooseImage({
-                count: '1', //最多可以选择的图片张数,
+                count: 1, //最多可以选择的图片张数,
                 success: res => {
                     // alert(JSON.stringify(res))
                     // 显示图片
@@ -126,14 +129,15 @@
         function jsClickEvent() {
             // 教师开启课程，结束购买流程
             $('.start-les').click(function () {
-                var startLesUrl = baseUrl + urlObj.startLesUrl // 开始课程
-                var deleLesUrl = baseUrl + urlObj.deleLesUrl // 删除课程
+                var startLesUrl = baseUrl + urlObj.startLesUrl + '?type=' + url_type // 开始课程
+                var deleLesUrl = baseUrl + urlObj.deleLesUrl + '?type=' + url_type // 删除课程
                 var elem = $(this).parents('li')
                 var le_id = elem.data('id')
                 var islock = 1
                 var data = {
                     islock: islock,
-                    le_id: le_id
+                    le_id: le_id,
+                    type: url_type,
                 }
                 // 请求后台接口
                 layer.confirm('确定结束发布，开始上课吗？', {
@@ -169,7 +173,7 @@
 
             // 教师查看课程详情跳转
             $('.link-href').click(function () {
-                var href = $(this).data('href')
+                var href = $(this).data('href') + '?type=' + url_type
                 window.location.href = href
             })
         }
@@ -180,6 +184,7 @@
             idEle: '#shenheguo',
             data: {
                 ishidden: 1,
+                type: url_type,
             },
         }, function () {
             // 执行回调
@@ -221,6 +226,7 @@
                     idEle: idEle,
                     data: {
                         ishidden: data.index,
+                        type: url_type,
                     }
                 }, function () {
                     // 执行回调
@@ -427,9 +433,10 @@
                 data.te_id = te_id
                 console.log(data)
                 // 请求
+                console.log(tstext)
                 var confirmText = '课时数：' + data.num_lesson + ' 节。<br>' + '是否确认提交本次上课签到记录？'
                 var confirmBx = layer.confirm(confirmText, {
-                    title: '妈妈我在-这第二课堂'
+                    title: tstext,
                 }, function () {
                     // 发送请求 发送上课签到消息
                     $.post(url, data, function (res) {

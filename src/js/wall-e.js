@@ -17,6 +17,7 @@
          */
         function jsGetClassList(url, obj, callback) {
             var data = obj.data
+            // var type =  root.getQueryString('type')// 获取地址中的type参数
             $(obj.idEle).empty()
             layui.use('flow', function () {
                 var flow = layui.flow;
@@ -24,11 +25,13 @@
                     elem: obj.idEle, //流加载容器
                     done: function (page, next) { //执行下一页的回调
                         data.page = +page
+                        // console.log(data)
+                        // data.type = type
                         //模拟数据插入
                         var lis = [];
                         $.post(url, data, function (res) {
                             var mydata = JSON.parse(res)
-                            console.log(mydata)
+                            // console.log(mydata)
                             if (!mydata.data) {
                                 return false
                             }
