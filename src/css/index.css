@@ -1,4 +1,7 @@
 @import 'StyleDepend/mReset.css';
+.layui-laydate table .layui-this {
+  background-color: #009ffb!important;
+}
 #jsClassList .layui-input-block .layui-form-selected dl {
   z-index: 999999;
 }
