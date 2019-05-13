@@ -66,9 +66,9 @@
             $("input[name='cover']").val('')
             uploadCover()
 
-        }) 
+        })
         layui.use('laydate', function () {
-            
+
             function getNowFormatDate() {
                 var date = new Date();
                 var seperator1 = "-";
@@ -320,13 +320,13 @@
                         root.removeDanger()
                         return ('未填写人数上限')
                     }
-                    if (value <= 0 ) {
+                    if (value <= 0) {
                         $("input[name='max_limit']").addClass('layui-form-danger')
                         root.removeDanger()
                         return ('上课人数不正确')
                     }
                 },
-              
+
                 fee: function (value, item) {
                     if (!value) {
                         $("input[name='fee']").addClass('layui-form-danger')
@@ -347,7 +347,7 @@
                     //     return('只能是数字')
                     // }
                 }
-                
+
             })
 
             form.on('submit(subLesson)', function (data) {
@@ -355,7 +355,7 @@
                 if (!isiOS) {
                     formData.le_intro = editor.getContent();
                     if (!formData.le_intro) {
-                        layer.msg('未填写课程介绍',{
+                        layer.msg('未填写课程介绍', {
                             icon: 5
                         })
                         return false
@@ -504,7 +504,7 @@
         renderJzXkList()
         // 渲染家长端 选课列表
         function renderJzXkList() {
-            var url = baseUrl + urlObj.jzFenye 
+            var url = baseUrl + urlObj.jzFenye
             layui.use('flow', function () {
                 var flow = layui.flow;
                 flow.load({
@@ -525,7 +525,7 @@
                         // });
                         let type = (root.getQueryString('type'));
                         $.post(url, {
-                            page: + page, // 分页
+                            page: +page, // 分页
                             type: type,
                         }, function (res) {
                             console.log(res)
@@ -610,21 +610,54 @@
 
     } else if (document.getElementById('jzLessonDet')) {
         // 购买课程提交
+    //    var ifchecked = $("input[name='fylock']").attr('checked')
+    //    if (!ifchecked) {
+    //         root.dylock = false //是否使用聪明豆抵扣现金
+    //    } else {
+    //         root.dylock = true //是否使用聪明豆抵扣现金
+    //    }
+    layui.use('form', function(){
+            var form = layui.form;
+            form.val("formTest", {
+                // "username": "贤心" // "name": "value"
+                // ,"sex": "女"
+                // ,"auth": 3
+                // ,"check[write]": true
+                // ,"open": false
+                // ,"desc": "我爱layui"
+                "dylock": true,
+            })
+        //各种基于事件的操作，下面会有进一步介绍
+      });
+   
+      root.dylock = true //是否使用聪明豆抵扣现金
+        layui.use('form', function () {
+            var form = layui.form;
+            form.on('switch(dylock)', function (data) {
+                root.dylock = data.elem.checked
+            });
+            //各种基于事件的操作，下面会有进一步介绍
+        });
+
         var le_id = root.getQueryString('id')
         let type = (root.getQueryString('type'));
         // 获取课程收费 fee
         var shoufei = ($('.feiyong-new').text())
-        if(shoufei == '免费课程') {
+        if (shoufei == '免费课程') {
             var fee = '免费课程'
         } else {
-            var fee = Number($('.feiyong-new').text().split('￥')[1])
+            var fee = Number($('#realprice').text().split('￥')[1])
         }
         $('.jz-buy-btn').click(function () {
+            console.log(root.dylock)
+
             var wallConfirm = layer.confirm('是否购买此课程？', ['确定', '取消'], function () {
                 layer.close(wallConfirm)
                 var buyLessonUrl = baseUrl + urlObj.buyLessonUrl
                 var data = ''
-                window.location.href = '/mobile2/dier_lesson/student?le_id=' + le_id + '&fee=' + fee + '&type=' + type
+                // alert('/mobile2/dier_lesson/student?le_id=' + le_id + '&fee=' + fee + '&type=' + type + '&dylock=' + root.dylock);
+                window.location.href = '/mobile2/dier_lesson/student?le_id=' + le_id + '&fee=' + fee + '&type=' + type + '&dylock=' + root.dylock
+
                 // layer.msg('购买车成功~', {
                 //     icon: 1,
                 //     time: 1500
@@ -637,7 +670,7 @@
         // 通过课程
         $('.passLes').click(function () {
             console.log(id)
-            $.post(url, { 
+            $.post(url, {
                 id: id,
                 ishidden: 1, // 1 通过 0 拒绝
             }, function (res) {

@@ -237,6 +237,10 @@
   width: 100%;
   background-color: #fecf96;
 }
+.layui-form-onswitch {
+  border-color: #009bf0!important;
+  background-color: #009bf0!important;
+}
 #jzLessonDet {
   min-height: 100vh;
 }
@@ -245,6 +249,15 @@
   margin: 40px 3% 40px;
   border: none;
   background-color: #fda02d;
+}
+#jzLessonDet .dy-text-ts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #009bf0;
 }
 #jzqddet {
   min-height: 100vh;
