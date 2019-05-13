@@ -3,6 +3,7 @@ body {
     background-color: #f0f0f1;
     color: #333;
 }
+
 // 第二课堂 头部切换
 .layui-tab {
     margin: 0;
@@ -58,26 +59,32 @@ body {
 .js-sh-list {
     .lesson-item {
         margin-bottom: 5px;
-        padding:  10px 4%;
+        padding: 10px 4%;
         overflow: hidden;
         background-color: #fff;
-        a ,.lesson-link {
+
+        a,
+        .lesson-link {
             display: flex;
+
             img {
-                width:  32%;
+                width: 32%;
                 height: 128px;
                 margin-right: 10px;
             }
-            p >img {
+
+            p>img {
                 width: auto;
                 height: 58px;
                 /* margin-right: 10px; */
                 margin: 0 auto;
                 display: block;
             }
+
             a {
                 display: inline-block;
             }
+
             .right {
                 position: relative;
                 flex: 1;
@@ -85,29 +92,35 @@ body {
                 flex-direction: column;
                 justify-content: space-around;
                 line-height: 1.2em;
+
                 .three-ellipsis {
                     height: 58px;
                     font-size: 14px;
                 }
             }
+
             dt {
                 // width: 50%;
             }
-            
+
             dd {
                 // width: 50%; 
                 color: #666;
+
                 p {
                     display: inline-block;
                     overflow: hidden;
                 }
             }
+
             .sf-bx {
                 color: #fda02d;
             }
+
             .max-num {
                 font-size: 12px;
                 color: #7bcfff;
+
                 .start-les {
                     display: inline-block;
                     margin-left: 13%;
@@ -126,6 +139,7 @@ body {
 .my-com-lessondet {
     .img-bx {
         position: relative;
+
         img {
             width: 100vw;
             height: 190px;
@@ -137,7 +151,7 @@ body {
             bottom: 0;
             left: 0;
             height: 32px;
-            padding:0 8px;
+            padding: 0 8px;
             line-height: 32px;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
@@ -145,16 +159,20 @@ body {
             color: #fff;
             background-color: #7bcfff;
         }
+
         .hadfull {
             background-color: #fda02d;
         }
+
         .hadover {
             background-color: #ff5500;
         }
     }
+
     .lesson-det {
         // padding: 14px;
         background-color: #fff;
+
         dt {
             padding: 14px 14px 0;
             line-height: 1.2em;
@@ -162,36 +180,51 @@ body {
             margin-bottom: 4px;
             font-weight: 500;
         }
+
         .detail-one {
             padding: 10px 14px 0;
             font-size: 12px;
             line-height: 1.2;
             color: #808080;
         }
+
         .feiyong-new {
             padding: 10px 14px;
-            font-size: 20px; 
+            font-size: 16px;
             color: #fda02d;
-        }.feiyong-new:after, .detail-two:after {
+            .line-through {
+                font-size: 14px;
+                text-decoration: line-through;
+                color:#969696!important;
+            }
+        }
+
+        .feiyong-new:after,
+        .detail-two:after {
             border-color: #ddd;
         }
-        .detail-two { 
+
+        .detail-two {
             display: flex;
             justify-content: space-between;
             text-align: center;
             padding: 10px 14px;
+
             .det-item {
-                width: 33.33%;    
+                width: 33.33%;
             }
+
             i {
                 font-size: 24px;
                 color: #808080;
             }
+
             .det-two-tt {
                 width: 100%;
                 font-size: 12px;
                 color: #808080;
             }
+
             .det-two-mid {
                 line-height: 1.4;
                 font-size: 14px;
@@ -199,17 +232,21 @@ body {
 
             }
         }
-    
-        .the-teacher::before,dd::before  {
+
+        .the-teacher::before,
+        dd::before {
             border-color: #ddd;
         }
-        .the-teacher  {
-            padding: 14px ;
-           .teacher-bx {
-            display: flex;
-            align-items: center;
-            padding: 10px 10px 0;
-           }
+
+        .the-teacher {
+            padding: 14px;
+
+            .teacher-bx {
+                display: flex;
+                align-items: center;
+                padding: 10px 10px 0;
+            }
+
             img {
                 width: 40px;
                 height: 40px;
@@ -229,6 +266,7 @@ body {
 
         p {
             display: inline-block;
+
             img {
                 width: 80%;
                 margin: 0 auto;
@@ -236,48 +274,59 @@ body {
             }
         }
     }
+
     .num-bx {
         padding: 14px 10px;
         margin-bottom: 4px;
-        background-color: #fff; 
+        background-color: #fff;
+
         span {
             display: inline-block;
-            padding:0 10px;
+            padding: 0 10px;
             font-size: 14px;
             color: #7bcfff;
         }
+
         span:first-child {
             border-right: 1px solid #ddd;
         }
+
         .money-num {
             color: #fda02d;
         }
-        
+
     }
+
     .num-bx::before {
         border-color: #ddd;
     }
+
     .ks-list {
         background-color: #fff;
+
         .ks-title {
             margin: 0 10px;
             line-height: 4em;
 
-        } 
+        }
+
         .ks-title::after {
             border-color: #ddd;
-        } 
+        }
+
         ul {
             li {
                 padding: 10px 15px;
                 display: flex;
                 justify-content: space-between;
                 line-height: 1.2em;
+
                 span:first-child {
                     flex: 1;
                 }
             }
-            .ks-item-right{
+
+            .ks-item-right {
                 display: inline-block;
                 padding: 0 10px;
                 height: 30px;
@@ -286,17 +335,16 @@ body {
                 text-align: center;
                 background-color: #7bcfff;
                 color: #fff;
-                
+
             }
+
             .lsdone {
                 .ks-item-right {
-                     background-color: #a5a5a5;
+                    background-color: #a5a5a5;
                 }
-               
+
             }
-           
-        } 
+
+        }
     }
 }
-
-

@@ -5,55 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>家长课程详情</title>
+    <title>教师课程详情</title>
     <!-- css -->
     <link rel="stylesheet" href="<?php echo PUBLICPATH; ?>dier/js/JsDepend/layui/css/layui.css">
-    <link rel="stylesheet" href="<?php echo PUBLICPATH; ?>dier/css/StyleDepend/swiper.min.css">
     <link rel="stylesheet" href="<?php echo PUBLICPATH; ?>dier/css/index.css?t=<?php echo time();?>">
     <link rel="stylesheet" href="<?php echo PUBLICPATH; ?>dier/css/common.css?t=<?php echo time();?>">
     <!-- js -->
     <script type='text/javascript' src="<?php echo PUBLICPATH; ?>dier/js/JsDepend/jQuery.min.js"></script>
-    <script type='text/javascript' src="<?php echo PUBLICPATH; ?>dier/js/JsDepend/swiper.min.js"></script>
     <script type='text/javascript' src="<?php echo PUBLICPATH; ?>dier/js/wall-e.js?t=<?php echo time();?>"></script>
 </head>
 
 <body>
-
-    <div id="jzLessonDet" class="my-com-lessondet">
+    <div id="jsLessonDet" class="my-com-lessondet" lesson-id="22233">
         <div class="img-bx ">
-            <img src="<?php echo PUBLICPATH; ?>dier/img/kcfengmian.png">
-            <!-- 两种情况 名额满添加样式hadfull -->
+            <img src="<?=$class_pic?>">
             <span class="img-tag  <?=$sy ==0 ? 'hadfull' : "" ;?>">
                 <?=$sy ==0 ? '名额已满' : "剩余：".$sy."人名额" ;?>
             </span>
         </div>
         <div class="lesson-det">
+            <dt>
+            </dt>
             <div class="detail-one">
                 招生人数 <?=$max_limit?>人 | <?=$sy == 0 ? "满员了" : "报名中"; ?> |  <?=$time?>课时
             </div>
-            <div class="feiyong-new mob_1px_b">
-                <span id="saleoffprice" class="">
-                    <?php $trueFee = $fee-$bean_fee;?>
-                  实付: <?=$fee == 0 ? "免费课程" : "￥".$trueFee;?>
-                </span>
-                <span id="realprice" class="line-through">
-                  原价:<?=$fee == 0 ? "免费课程" : "￥".$fee;?> 
-                </span>
-                 <div class="dy-text-ts">
-                    <span>
-                        <?php if($bean_switch == '2'){echo $bean_num."个聪明豆可抵用".$bean_fee.'元';}?>
-                    </span>
-                    <div class="layui-form" lay-filter="formTest">
-                        <div class="layui-form-item">
-                            <div class="layui-input-block switch-btn">
-                                <input type="checkbox" checked=""   name="dylock"  lay-skin="switch" lay-filter="dylock"
-                                    lay-text="使用|不使用">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-           
-        </div>
+            <div class="feiyong-new mob_1px_b"><?=$fee == 0 ? "免费课程" : "￥".$fee;?></div>
 
             <div class="detail-two mob_1px_b">
                 <div class="det-item">
@@ -75,7 +51,9 @@
             <div class="the-teacher ">
                 <label for="teacher">任课老师</label>
                 <div class="teacher-bx">
-                    <img src="<?=$teacher['te_pic']?>">
+                    <?php if(!empty($teacher['te_pic'])){?>
+                        <img src="<?=$teacher['te_pic']?>" alt="<?=$teacher['name']?>">
+                    <?php }?>
                     <span><?=$teacher['name']?></span>
                 </div>
             </div>
@@ -83,8 +61,32 @@
                 <?=$le_intro?>
             </dd>
         </div>
-        <div class="jz-buy-btn layui-btn layui-btn-radius layui-btn-warm ">
-            立即购买
+        <!-- <div class="num-bx mob_1px_t">
+            <span>#人数上限：22人</span>
+            <span class="money-num">￥200元</span>
+        </div> -->
+        <div class="ks-list ">
+            <!-- <div class="ks-title mob_1px_b">课时数：100课时</div> -->
+            <ul>
+                <!-- 两种情况 已经上的课加 lsdone -->
+                <!-- <li class="lsdone">
+                    <span class="ks-item-left">
+                        第1课时
+                    </span>
+                    <span class="ks-item-right ">
+                        已结束
+                    </span>
+                </li>
+                <li class="lsdone">
+                    <span class="ks-item-left">
+                        第2课时
+                    </span>
+                    <span class="ks-item-right ">
+                        已结束
+                    </span>
+                </li>
+            -->
+            </ul>
         </div>
     </div>
 

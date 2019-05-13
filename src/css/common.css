@@ -157,8 +157,13 @@ body {
 }
 .my-com-lessondet .lesson-det .feiyong-new {
   padding: 10px 14px;
-  font-size: 20px;
+  font-size: 16px;
   color: #fda02d;
+}
+.my-com-lessondet .lesson-det .feiyong-new .line-through {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #969696!important;
 }
 .my-com-lessondet .lesson-det .feiyong-new:after,
 .my-com-lessondet .lesson-det .detail-two:after {
@@ -192,7 +197,7 @@ body {
   border-color: #ddd;
 }
 .my-com-lessondet .lesson-det .the-teacher {
-  padding: 14px ;
+  padding: 14px;
 }
 .my-com-lessondet .lesson-det .the-teacher .teacher-bx {
   display: flex;

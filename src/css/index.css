@@ -237,9 +237,27 @@
   width: 100%;
   background-color: #fecf96;
 }
+.layui-form-switch em {
+  width: 36px;
+}
 .layui-form-onswitch {
   border-color: #009bf0!important;
   background-color: #009bf0!important;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+.layui-form-switch {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+.layui-form-switch i {
+  top: 2px;
+}
+.switch-btn {
+  display: flex;
+  align-items: center;
 }
 #jzLessonDet {
   min-height: 100vh;

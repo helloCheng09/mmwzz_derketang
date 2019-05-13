@@ -635,6 +635,15 @@
             var form = layui.form;
             form.on('switch(dylock)', function (data) {
                 root.dylock = data.elem.checked
+                if (!root.dylock) {
+                    // 不适用聪明豆抵扣
+                    // 隐藏折扣价
+                    $("#saleoffprice").hide()
+                    $('#realprice').removeClass('line-through')
+                } else {
+                    $("#saleoffprice").show()
+                    $('#realprice').addClass('line-through')
+                }
             });
             //各种基于事件的操作，下面会有进一步介绍
         });
