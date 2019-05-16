@@ -238,7 +238,7 @@
   justify-content: space-between;
 }
 #jzlessonlist .layui-progress-bar {
-  background-color: #fda02d;
+  background-color: #fa6800;
 }
 #jzlessonlist .layui-progress {
   display: inline-block;
@@ -247,6 +247,9 @@
 }
 .layui-form-switch em {
   width: 36px;
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
 }
 .layui-form-onswitch {
   border-color: #009bf0!important;

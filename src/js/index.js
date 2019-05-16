@@ -562,29 +562,40 @@
                                     `
                                 }
                                 var bean_fee = Number(item.fee) - Number(item.bean_fee) 
+
+                                if (item.bean_html != "") {
+                                    var shijiprice = `
+                                        <div class="line-throught">
+                                        ￥ ${item.fee} 
+                                        </div>
+                                        <div>
+                                            <span class="zhehou-price">${item.bean_html}</span>
+                                        </div>
+                                    `
+                                    
+                                } else {
+                                    var shijiprice = `
+                                    <div class="">
+                                            ￥ ${item.fee} 
+                                    </div>
+                                `
+                                }
+
                                 html = `
                                     <li class="lesson-item" data-id="22334">
                                         <a href="${linkUrl}">
                                             <img src="/public/dier/img/classroom_default_cover_vertical.png">
                                             <div class="right">
                                                 <dt class="one-ellipsis">${item.title}</dt>
-                                                <dd class="two-ellipsis">
-                                                    ${item.le_intro}
-                                                </dd>
                                                 <div class="sf-bx">
                                                     <span>
-                                                        <div>
-                                                        ￥ ${item.fee} 
-                                                        </div>
-                                                        <div>
-                                                          <span class="zhehou-price">兑换后付:￥${bean_fee}</span>
-                                                        </div>
+                                                        ${shijiprice} 
                                                     </span>
                                                     ${zhifuHtml}
                                                 </div>
                                                 <div class="max-num">
                                                     <div>
-                                                        #剩余：${item.count}人
+                                                        #剩余：${item.count} / ${item.max_limit}人
                                                     </div>
                                                     <div class="layui-progress" lay-filter="${proFliter}">
                                                         <div class="layui-progress-bar" lay-percent="${percent}"></div>
