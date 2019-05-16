@@ -212,11 +212,19 @@
   align-items: center;
   justify-content: space-between;
 }
+#jzlessonlist .sf-bx span {
+  font-size: 14px;
+}
+#jzlessonlist .sf-bx .zhehou-price {
+  color: #009bf0;
+}
 #jzlessonlist .two-ellipsis {
   height: 39px;
 }
 #jzlessonlist .zhifu {
   display: inline-block;
+  width: 50px;
+  text-align: center;
   padding: 4px 8px;
   border-radius: 4px;
   background-color: #fda02d;

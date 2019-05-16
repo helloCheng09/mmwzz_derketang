@@ -561,7 +561,7 @@
                                         javascript:void(0);
                                     `
                                 }
-
+                                var bean_fee = Number(item.fee) - Number(item.bean_fee) 
                                 html = `
                                     <li class="lesson-item" data-id="22334">
                                         <a href="${linkUrl}">
@@ -573,7 +573,12 @@
                                                 </dd>
                                                 <div class="sf-bx">
                                                     <span>
-                                                        收费：￥${item.fee}
+                                                        <div>
+                                                        ￥ ${item.fee} 
+                                                        </div>
+                                                        <div>
+                                                          <span class="zhehou-price">兑换后付:￥${bean_fee}</span>
+                                                        </div>
                                                     </span>
                                                     ${zhifuHtml}
                                                 </div>
