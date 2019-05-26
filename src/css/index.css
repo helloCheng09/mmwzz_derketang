@@ -1,12 +1,12 @@
 @import 'StyleDepend/mReset.css';
 .layui-laydate table .layui-this {
-  background-color: #009ffb!important;
+  background-color: #009ffb !important;
 }
 #jsClassList .layui-input-block .layui-form-selected dl {
   z-index: 999999;
 }
 #jsClassList .layui-tab-item .upload-img {
-  background-color: transparent!important;
+  background-color: transparent !important;
 }
 #jsClassList .upload-img-bx {
   display: inline-block;
@@ -48,7 +48,7 @@
 #jsClassList .fuwenben-bx p {
   display: inline-block;
   width: 100%;
-  padding: 2%!important;
+  padding: 2% !important;
 }
 #jsClassList .fuwenben-bx img {
   display: block;
@@ -207,6 +207,15 @@
 #qiandaowrap .layui-tab-item .layui-btn {
   margin-top: 60px;
 }
+#jzlessonlist .swiper-container {
+  width: 100vw;
+  height: 50vw;
+}
+#jzlessonlist .swiper-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 #jzlessonlist .sf-bx {
   display: flex;
   align-items: center;
@@ -223,7 +232,7 @@
 }
 #jzlessonlist .zhifu {
   display: inline-block;
-  width: 50px;
+  width: 74px;
   text-align: center;
   padding: 4px 8px;
   border-radius: 4px;
@@ -252,8 +261,8 @@
   text-align: center;
 }
 .layui-form-onswitch {
-  border-color: #009bf0!important;
-  background-color: #009bf0!important;
+  border-color: #009bf0 !important;
+  background-color: #009bf0 !important;
   display: flex;
   align-items: center;
   margin-top: 0;
@@ -288,8 +297,24 @@
   line-height: 1.5;
   color: #009bf0;
 }
+.tk-form-bx {
+  width: 300px;
+  padding: 10px;
+}
+.tuikuan-input {
+  margin-bottom: 20px;
+}
 #jzqddet {
   min-height: 100vh;
+}
+#jzqddet .subed-tuikuan {
+  background-color: #ccc !important;
+}
+#jzqddet .tui-btn-bx {
+  padding: 40px 10px;
+}
+#jzqddet .jz-tui-btn {
+  background-color: #fda02d;
 }
 #jzqddet .ks-item-left {
   flex: none;
@@ -378,7 +403,7 @@
 }
 #jsQdList .qd-gl .right-btn-link {
   width: 80px;
-  height: 24px!important;
+  height: 24px !important;
   padding: 0 4px;
   line-height: 24px;
   text-align: center;

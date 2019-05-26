@@ -1,19 +1,24 @@
 @import './StyleDepend/mReset.css';
+
 // 教师第二课堂课程列表
 .layui-laydate table .layui-this {
-    background-color: #009ffb!important;
+    background-color: #009ffb !important;
 }
+
 #jsClassList {
     .layui-input-block .layui-form-selected dl {
         z-index: 999999;
-    } 
-    .none-events { 
+    }
+
+    .none-events {
         // pointer-events: none;
     }
+
     // 重写layer时间选择
-    .layui-tab-item .upload-img{
-        background-color: transparent!important;
+    .layui-tab-item .upload-img {
+        background-color: transparent !important;
     }
+
     .upload-img-bx {
         display: inline-block;
         width: 60px;
@@ -23,23 +28,26 @@
         align-items: center;
         margin: 0 10px;
         border: dashed 1px #7bcfff;
+
         i {
             font-size: 40px;
             color: #7bcfff;
         }
     }
+
     .img-show-bx {
         margin: 0 10px;
         display: flex;
         align-items: center;
-        
+
         >span {
             padding: 0 10px;
             margin: 0 10px;
             line-height: 1.6;
-            background-color: rgba(0,0,0,.4);
+            background-color: rgba(0, 0, 0, .4);
             color: #fff;
         }
+
         img {
             display: inline-block;
             width: 60px;
@@ -47,17 +55,22 @@
             object-fit: cover;
         }
     }
+
     .little-ts {
         color: #f50;
         font-size: 12px;
     }
+
     .fuwenben-bx {
+
         // display: flex;
-        .Eleditor-placeholder, p {
+        .Eleditor-placeholder,
+        p {
             display: inline-block;
             width: 100%;
-            padding: 2%!important;
+            padding: 2% !important;
         }
+
         img {
             display: block;
             width: 85%;
@@ -65,7 +78,9 @@
             margin: 0 auto;
             object-fit: cover;
         }
-        .closebtn-input, .closebtn-textarea {
+
+        .closebtn-input,
+        .closebtn-textarea {
             position: absolute;
             z-index: 999;
             right: 14px;
@@ -75,13 +90,16 @@
             height: 20px;
             display: none;
         }
+
         #container {
             margin-top: 10px;
         }
     }
+
     .Eleditor-controller {
         z-index: 99999;
     }
+
     .layui-tab-item {
         .layui-form-item {
             position: relative;
@@ -90,6 +108,7 @@
         .layui-form-block {
             flex: 1;
         }
+
         .closebtn-textarea {
             top: 88%;
         }
@@ -129,15 +148,17 @@
             display: inline-block;
             padding-bottom: 10px;
             width: 100%;
+
             .layui-form-label {
                 width: 100%;
                 display: block;
             }
+
             textarea {
                 // min-height: 160px;
             }
-            .fuwenben-bx {
-            }
+
+            .fuwenben-bx {}
         }
 
     }
@@ -264,10 +285,12 @@
             top: auto;
             margin: 0;
         }
+
         .btn-item {
             padding: 0 10px;
             background-color: #f0f0f1;
         }
+
         .layui-btn {
             margin-top: 60px;
         }
@@ -277,45 +300,62 @@
 // 家长列表
 
 #jzlessonlist {
+    .swiper-container {
+        width: 100vw;
+        height: 50vw;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }   
     .sf-bx {
         display: flex;
         // width: 50%;
         align-items: center;
         justify-content: space-between;
+
         span {
             font-size: 14px;
         }
+
         .zhehou-price {
             color: #009bf0;
         }
     }
+
     .two-ellipsis {
         height: 39px;
     }
+
     .zhifu {
         display: inline-block;
-        width: 50px;
+        width: 74px;
         text-align: center;
         padding: 4px 8px;
         border-radius: 4px;
         background-color: #fda02d;
         color: #fff;
     }
+
     .max-num {
         position: relative;
         // width: 80%;
     }
+
     .check-num {
         display: flex;
         // width: 60%;
         justify-content: space-between;
     }
+
     .layui-progress-bar {
         background-color: #fa6800;
     }
+
     .layui-progress {
         display: inline-block;
-        width:100%;
+        width: 100%;
         background-color: #fecf96;
     }
 }
@@ -327,28 +367,34 @@
     white-space: nowrap;
     text-align: center;
 }
+
 .layui-form-onswitch {
-    border-color: #009bf0!important;
-    background-color: #009bf0!important;
+    border-color: #009bf0 !important;
+    background-color: #009bf0 !important;
     display: flex;
     align-items: center;
     margin-top: 0;
 }
+
 .layui-form-switch {
     display: flex;
     // width: 80px;
     align-items: center;
     margin-top: 0;
 }
+
 .layui-form-switch i {
     top: 2px;
 }
+
 .switch-btn {
     display: flex;
     align-items: center;
 }
+
 #jzLessonDet {
     min-height: 100vh;
+
     .jz-buy-btn {
         width: 94%;
         margin: 40px 3% 40px;
@@ -366,19 +412,47 @@
         color: #009bf0;
     }
 }
+
 // 家长查看课程学生签到情况
+// 退款表单
+.tk-form-bx {
+    width: 300px;
+    padding: 10px;
+}
+ .tuikuan-input {
+        margin-bottom: 20px;
+    }
 #jzqddet {
     min-height: 100vh;
+
+   
+
+    // 家长申请退款按钮
+    .subed-tuikuan {
+        background-color: #ccc !important;
+    }
+
+    .tui-btn-bx {
+        padding: 40px 10px;
+    }
+
+    .jz-tui-btn {
+        background-color: #fda02d;
+    }
+
     .ks-item-left {
         flex: none;
         width: 100%;
     }
+
     .student-qd {
         flex-wrap: wrap;
     }
+
     .qd-det {
         padding-left: 40px;
         width: 100%;
+
         .qd-item {
             display: flex;
             justify-content: space-between;
@@ -386,6 +460,7 @@
             line-height: 24px;
             color: #999;
         }
+
         .done {
             color: #009ffb;
         }
@@ -401,12 +476,13 @@
         align-items: center;
         justify-content: space-between;
     }
+
     .waiting-les {
         color: #7bcfff;
     }
 
     .sh-done {
-        width:60px;
+        width: 60px;
         height: 60px;
         border-radius: 100%;
     }
@@ -416,6 +492,7 @@
         padding: 0 15px;
         justify-content: center;
         background-color: #fff;
+
         .search-item {
             display: flex;
             align-items: center;
@@ -424,23 +501,26 @@
             border-radius: 10px;
             background-color: #f0f0f1;
         }
+
         i {
             padding-top: 4px;
             font-size: 20px;
             color: #808080;
         }
+
         input {
             line-height: 18px;
             padding: 4px 10px 4px 4px;
             background-color: #f0f0f1;
         }
     }
-    
+
 }
 
 // 校长审核课程
 #xzlsDet {
     min-height: 100vh;
+
     .xzsh-btns {
         width: 100%;
         // position: absolute;
@@ -448,10 +528,12 @@
         display: flex;
         justify-content: space-around;
         margin: 40px 0;
+
         .danger {
             background-color: #f50;
         }
     }
+
     .xzshbtn {
         width: 100px;
     }
@@ -462,10 +544,12 @@
     .lesson-item .lesson-link img {
         // height: 152px;
     }
+
     .qd-gl {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         >div:first-child {
             display: flex;
             flex-direction: column;
@@ -473,19 +557,23 @@
             padding: 6px 0;
             height: 56px;
         }
+
         .right-btn-link {
             width: 80px;
-            height: 24px!important;
+            height: 24px !important;
             padding: 0 4px;
             line-height: 24px;
             text-align: center;
             font-size: 14px;
         }
+
         .r-btns {
             width: 84px;
+
             .layui-btn {
                 margin: 4px 0 0 0;
             }
+
             a {
                 display: inline-block;
                 line-height: 24px;
@@ -493,6 +581,7 @@
                 text-align: center;
                 color: #fff;
             }
+
             .layui-btn:last-child {
                 background-color: #fda02d;
             }

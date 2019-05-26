@@ -126,7 +126,7 @@ body {
 }
 .my-com-lessondet .img-bx .img-tag {
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   left: 0;
   height: 32px;
   padding: 0 8px;
@@ -240,13 +240,11 @@ body {
   font-size: 14px;
   color: #7bcfff;
 }
-.my-com-lessondet .num-bx span:first-child {
-  border-right: 1px solid #ddd;
-}
 .my-com-lessondet .num-bx .money-num {
   color: #fda02d;
 }
 .my-com-lessondet .num-bx::before {
+  top: -2px;
   border-color: #ddd;
 }
 .my-com-lessondet .ks-list {

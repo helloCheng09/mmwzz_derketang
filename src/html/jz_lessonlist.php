@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="<?php echo PUBLICPATH; ?>dier/js/JsDepend/layui/css/layui.css">
     <link rel="stylesheet" href="<?php echo PUBLICPATH; ?>dier/css/index.css?t=<?php echo time();?>">
     <link rel="stylesheet" href="<?php echo PUBLICPATH; ?>dier/css/common.css?t=<?php echo time();?>">
+    <link rel="stylesheet" href="<?php echo PUBLICPATH; ?>dier/css/StyleDepend/swiper.min.css">
     <!-- js -->
     <script type='text/javascript' src="<?php echo PUBLICPATH; ?>dier/js/JsDepend/jQuery.min.js"></script>
     <script type='text/javascript' src="<?php echo PUBLICPATH; ?>dier/js/wall-e.js?t=<?php echo time();?>"></script>
@@ -18,6 +19,19 @@
 <body>
 
     <div id="jzlessonlist">
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="http://www.mamawozaizhe.com/public/images/mobile/palace/banner1.png">
+                    </div>
+                    <div class="swiper-slide"> <img
+                            src="http://www.mamawozaizhe.com/public/images/mobile/palace/banner2.png"></div>
+                    <div class="swiper-slide"> <img
+                            src="http://www.mamawozaizhe.com/public/images/mobile/palace/banner3.png"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
         <div class="layui-tab" lay-filter="tab1">
             <div class="head-bx">
                 <ul class="layui-tab-title head-con">
@@ -87,6 +101,7 @@
 </html>
 <!-- js -->
 <script type='text/javascript' src="<?php echo PUBLICPATH; ?>dier/js/JsDepend/layui/layui.all.js"></script>
+<script type="text/javascript" src="<?php echo PUBLICPATH; ?>dier/js/JsDepend/swiper.min.js"></script>
 <script type='text/javascript' src="<?php echo PUBLICPATH; ?>dier/js/index.js?t=<?php echo time();?>"></script>
 <script>
 </script>
