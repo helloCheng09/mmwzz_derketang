@@ -29,6 +29,7 @@
         // 获取url参数type
         var url_type = (root.getQueryString('type'))
         console.log(url_type);
+
         // 上传图片到微信接口
         // 展示本地图片地址
         // 传微信服务器id给后台
@@ -501,6 +502,11 @@
         })
 
     } else if (document.getElementById('jzlessonlist')) {
+        // 判断轮播图
+        var url_type = root.getQueryString('type')
+        if (url_type != 'palace') {
+            $('.swiper-container').remove()
+        }
         // 课程列表
         var mySwiper = new Swiper('.swiper-container', {
             loop: true, // 循环模式选项
